@@ -1,0 +1,8 @@
+test_area
+md-learning
+.DS_Store
+.env
+venv
+requirements.txt
+__pycache__
+.vscode

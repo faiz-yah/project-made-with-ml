@@ -1,0 +1,23 @@
+encodings:    [ordinal, frequency, target]
+binnings:     [by_interval, by_frq, custom]                                                                    
+feature_sets: [extended]                           
+scalers:      [standard, minmax]
+models:       [logreg, xgb, lgbm, rf] 
+
+custom_bins:
+    Age:  {bins: [0, 12, 18, 65, 100], labels: [child, teen, adult, senior]}
+    Fare: {bins: [0, 10, 50, 150, 600], labels: [cheap, moderate, expensive, luxury]}   
+
+# # or manually defined
+# # encoding: frequency
+# # binning: by_frq
+# # feature_set: extended
+# # scaler: standard
+# # model: random_forest
+
+
+# encodings:    [ordinal]
+# binnings:     [by_interval]                                                                    
+# feature_sets: [basic]                           
+# scalers:      [standard]
+# models:       [logreg] 
